@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>addmission report page</title>
+</head>
+<body>
+<h1>Addmissions Report :</h1>
+<br>
+<table border="1">
+    <tr>
+        <th>student name</th>
+        <th>father name</th>
+        <th>class</th>
+        <th>contact </th>
+        <th>Actions </th>
+    </tr>
+    {% for s in allstudents %}
+    <tr>
+        <td>{{s.name}}</td>
+        <td>{{s.fathername}}</td>
+        <td>{{s.classname}}</td>
+        <td>{{s.contact}}</td>
+        <td><a href="/ad/update/{{s.id}}">update</a> &nbsp;&nbsp;&nbsp;
+        <a href="/ad/delete/{{s.id}}">delete</a> </td>
+    </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>

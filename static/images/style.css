@@ -1,0 +1,14 @@
+*{
+    margin:0;
+    padding:0;
+
+
+}
+div{
+    border: 1px solid grey;
+    width:45%
+}
+h1{
+    color:red;
+
+}

@@ -1,0 +1,18 @@
+{% load static %}
+<html>
+<head>
+<title>Add Vendor page</title>
+</head>
+<body>
+<h1 style="color: red;">Hello! Welcome to add vendor page</h1>
+
+<h1>please fill  the below form</h1><br>
+<form method="post">
+    <table>
+    {{form.as_table}}
+    </table><br>
+    <input type="submit" value="Add Vendor">
+    {% csrf_token %}
+</form>
+</body>
+</html>
